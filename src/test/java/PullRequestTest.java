@@ -10,6 +10,8 @@ public class PullRequestTest {
 
     private final String GITHUB_TOKEN = System.getenv("GITHUB_TOKEN");
 
+    // When the reviewer's user account gets deleted
+    // Link - https://github.com/sahansera/TestRepo/pull/1
     @Test
     public void getPullRequestWithId1() {
         try {
@@ -24,6 +26,8 @@ public class PullRequestTest {
         }
     }
 
+    // When the PR author's account gets deleted
+    // Link - https://github.com/sahansera/TestRepo/pull/2
     @Test
     public void getPullRequestWithId2() {
         try {
